@@ -66,7 +66,7 @@ class Dashboard extends React.Component{
                         filter((ele =>{
                             if(this.state.name ===""){
                                 return ele;
-                            }else if(ele["name"].includes(this.state.name)) {
+                            }else if(ele["name"].toLowerCase().includes(this.state.name)) {
                                 return ele;
                             }
                         }))
